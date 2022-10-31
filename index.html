@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Quote Van De Dag</title>
+    <meta charset="utf-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet"> 
+    <style>
+        body,
+        html,
+        .container {
+            padding: 0;
+            margin: 0;
+            height: 100%;
+        }
+
+        .container {
+            background-size: contain;
+            background-position: center;
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+            align-content: center;
+            align-items: center;
+        }
+
+        body {
+            font-size: 12px;
+            font-family: sans-serif;
+        }
+
+        .caption {
+            color: white;
+            padding: 10px;
+            background-color: rgba(0, 0, 0, 0.5);
+            float: left;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+        }
+
+        .quote {
+            text-align: center;
+            max-width: 900px;
+            font-family: 'Roboto Slab', sans-serif;
+            line-height: 1.2em;
+        }
+    </style>
+</head>
+
+<body id="js_body">
+    <div class="container" id="js_image">
+        <div class="quote" id="js_quote">Dit is een citaat</div>
+        <div class="caption" id="js_caption"></div>
+    </div>
+</body>
+<script src="quotes.js"></script>
+<script src="script.js"></script>
+
+</html>
